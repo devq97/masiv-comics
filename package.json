@@ -4,8 +4,30 @@
   "main": "index.js",
   "author": "devq97@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node server",
+    "prettify": "prettier --write"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:eslint:fix",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "pre-commit": "lint:staged",
   "dependencies": {
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^2.0.2"
   }
 }
