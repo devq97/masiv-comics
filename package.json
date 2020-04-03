@@ -1,0 +1,11 @@
+{
+  "name": "masiv-comic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "devq97@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
