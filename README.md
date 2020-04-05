@@ -4,6 +4,10 @@
 
 Esta prueba se ha desarrollado a partir de una arquitectura front, propuesta por la comunidad de React. La arquitectura propuesta utiliza tecnologías como React, Redux-saga, Webpack entre otras más, y ha tenido una gran trayectoria para ser usada en proyectos escalables con las mejores prácticas de desarrollo.
 
+#### Despliegue 🚀
+
+La prueba se ha desplegado en modo de producción a través de Netlify para poder ver la prueba en línea abriendo el siguiente link: https://optimistic-almeida-01afe7.netlify.com/
+
 #### Inicio 🚀
 
 Sigue estas instrucciones para obtener una copia del proyecto y poderlo ejecutar en tu ambiente local.
@@ -89,5 +93,5 @@ Puedes revisar el archivo package.json para indagar más acerca de los scripts y
 
 #### License 📄
 
-Este proyecto es licenciado bajo el MIT.
+Este proyecto está bajo la licencia del MIT.
 
