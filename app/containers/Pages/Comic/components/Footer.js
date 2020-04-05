@@ -1,6 +1,7 @@
 import React from "react";
 import css from 'dan-styles/comic.scss';
 import {FormattedMessage} from "react-intl";
+import Proptypes from 'prop-types';
 
 const Footer = ({comic, messages}) => {
   return (
@@ -25,6 +26,11 @@ const Footer = ({comic, messages}) => {
       </p>
     </div>
   )
+};
+
+Footer.propTypes = {
+  comic: Proptypes.object.isRequired,
+  messages: Proptypes.object.isRequired
 };
 
 export default Footer;

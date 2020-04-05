@@ -12,9 +12,17 @@ import { compose } from "redux";
 import messages from "./messages";
 
 const branch = 'comic';
+
+/**
+ * Inject saga to store principal
+ */
 const withSaga = injectSaga({ key: 'Index', saga: rootSaga });
+
 const Index = () => {
 
+  /**
+   * Destruct hook useComic
+   */
   const { comic, fetchLatestComic, fetchRandomComic, updateRate } = useComic();
 
   return (

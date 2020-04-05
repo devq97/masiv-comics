@@ -1,6 +1,9 @@
 import { fromJS } from "immutable";
 import * as types from './types';
 
+/**
+ * Initial state
+ */
 export const initialState = {
   comic: {
     items: fromJS({}),
@@ -13,6 +16,11 @@ export const initialState = {
 
 const initialImmutableState = fromJS(initialState);
 
+/**
+ * Switch reducer
+ * @param {*} state 
+ * @param {*} action 
+ */
 export default function reducer(state = initialImmutableState, action = {}) {
   const { branch } = action;
   switch (action.type) {

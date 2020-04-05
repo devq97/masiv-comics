@@ -5,6 +5,9 @@ import * as types from './types';
 
 const branch = 'comic';
 
+/**
+ * Fetch latest comic saga
+ */
 function* fetchLatestComicAsync() {
   try {
     const response = yield axios.get(`https://cors-anywhere.herokuapp.com/https://xkcd.com/info.0.json`);
@@ -16,6 +19,10 @@ function* fetchLatestComicAsync() {
   }
 }
 
+/**
+ * Fetch random comic saga
+ * @param {*} param0 
+ */
 function* fetchRandomComicAsync({ payload }) {
   try {
     const response = yield axios.get(`https://cors-anywhere.herokuapp.com/https://xkcd.com/${payload}/info.0.json`);
@@ -27,7 +34,9 @@ function* fetchRandomComicAsync({ payload }) {
   }
 }
 
-// Watchers
+/**
+ * Watchers
+ */
 export function* rootSaga() {
   yield all([
     yield takeLatest(`${branch}/${types.FETCH_LATEST_COMIC}`, fetchLatestComicAsync),

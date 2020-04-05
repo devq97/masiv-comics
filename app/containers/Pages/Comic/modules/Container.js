@@ -1,5 +1,6 @@
 import React, {useEffect} from "react";
 import BlockUi from "react-block-ui";
+import PropTypes from 'prop-types';
 
 import css from 'dan-styles/comic.scss';
 import Title from "../components/Title";
@@ -12,11 +13,18 @@ import {FormattedMessage} from "react-intl";
 
 const Container = ({fetchLatestComic, fetchRandomComic, updateRate, dataInit, branch, ...others}) => {
 
+  /**
+   * Call fetch latest comic when component is mounted
+   */
   useEffect( () => {
     fetchLatestComic(dataInit, branch);
   },[]);
 
+  /**
+   * Destruct others props
+   */
   const { comic, messages } = others;
+
   return (
     <BlockUi tag="div" blocking={comic.get('loading')} renderChildren={false}>
       { comic.get('error') ?
@@ -52,6 +60,14 @@ const Container = ({fetchLatestComic, fetchRandomComic, updateRate, dataInit, br
       }
     </BlockUi>
   )
+};
+
+Container.propTypes = {
+  fetchLatestComic: PropTypes.func.isRequired,
+  fetchRandomComic: PropTypes.func.isRequired, 
+  updateRate: PropTypes.func.isRequired, 
+  dataInit: PropTypes.array, 
+  branch: PropTypes.string.isRequired
 };
 
 export default Container;

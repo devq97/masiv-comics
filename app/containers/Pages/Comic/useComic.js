@@ -12,8 +12,14 @@ function useComic() {
 
   return {
 
+    /**
+     * State
+     */
     comic: useSelector(state => state.getIn([branchState, 'comic'])),
 
+    /**
+     * Functions to use
+     */
     fetchLatestComic: (dataInit, branch) => dispatch(fetchLatestComicAction(dataInit, branch)),
     fetchRandomComic: (number, branch) => dispatch(fetchRandomComicAction(number, branch)),
     updateRate: (rate, branch) => dispatch(updateRateAction(rate, branch))
