@@ -36,8 +36,15 @@ Las instrucciones a tener en cuenta son las siguientes:
 
 Puedes revisar el archivo package.json para indagar más acerca de los scripts y las dependecias que usa el proyecto.
 
-#### Estructura de carpetas 🔧
+#### Funcionalidad multi-idioma 💬
 
+El proyecto permite manejar multiples idiomas, en este caso se hizo para poderlo ejecutar en español en inglés. Para poder cambiar el idioma, lo que debes hacer es ir al archivo i18n.js y cambiar la variable que se llama DEFAULT_LOCALE.
+
+project
+    ├── app 
+    |   └── i18n.js
+
+#### Estructura de carpetas 🔧
 
     project
     ├── app 
