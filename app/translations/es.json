@@ -1,0 +1,9 @@
+{
+  "masiv.containers.pages.Comic.title": "Masiv Comics",
+  "masiv.containers.pages.Comic.click": "Click en el comic!",
+  "masiv.containers.pages.Comic.change": "Cambiar",
+  "masiv.containers.pages.Comic.month": "Mes",
+  "masiv.containers.pages.Comic.year": "Año",
+  "masiv.containers.pages.Comic.day": "Día",
+  "masiv.containers.pages.Comic.error": "Error haciendo la petición"
+}

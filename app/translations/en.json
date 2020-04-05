@@ -1,3 +1,9 @@
 {
-  "home": "home"
+  "masiv.containers.pages.Comic.title": "Masiv Comics",
+  "masiv.containers.pages.Comic.click": "Click on Comic!",
+  "masiv.containers.pages.Comic.change": "Change",
+  "masiv.containers.pages.Comic.month": "Month",
+  "masiv.containers.pages.Comic.year": "Year",
+  "masiv.containers.pages.Comic.day": "Day",
+  "masiv.containers.pages.Comic.error": "Error fetching API"
 }
