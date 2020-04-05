@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Indie Flower', cursive, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+nav {
+  background-color: #81d4fa !important;
+  color: #fff;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.change {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 1px solid #D4EFF9;
+  border-radius: 5px;
+  padding: 0 2em;
+}
+
+.change:hover {
+  background-color: #C5EDFC;
+}
+
+nav a {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*
+
+(min-width: 601px)
+height: 64px;
+line-height: 64px;
+nav
+
+*/
+
+.background {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 99%;
+  min-height: 100%;
+  background: url("../../../public/images/comic.png") no-repeat center center;
+  background-size: contain;
+}
+
+.comic {
+  display: block;
+  margin: auto;
+  width: 28rem;
+  height: 33rem;
+  margin-top: 26vh;
+  border-radius: 8px;
+}
+
+.subtitle {
+  -webkit-box-shadow: 3px 10px 60px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 10px 60px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 10px 60px 0px rgba(0,0,0,0.75);
+}
+
+.comic_img {
+  display: block;
+  margin: auto;
+  max-width: 28rem !important;
+  max-height: 33rem !important;
+  min-height: 15rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 10px 60px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 10px 60px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 10px 60px 0px rgba(0,0,0,0.75);
+}
+
+.comic_title {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: max-content;
+}
+
+.comic_footer {
+  position: absolute;
+  display: flex;
+  margin-left: 2rem;
+  width: 30rem;
+  font-size: 2rem;
+}
+
+.comic_desc {
+  position: absolute;
+  margin-left: 75%;
+  width: 30rem;
+}
+
+@media (max-width: 800px) {
+  .background, .comic_desc, .comic_title, .comic_footer {
+    position: relative;
+  }
+
+  .comic_desc, .comic_footer {
+    margin: auto;
+    padding: 2rem;
+  }
+
+  .background {
+    background: none;
+  }
+
+  .comic {
+    height: max-content;
+    margin: auto;
+  }
+
+  .comic_title {
+    text-align: center;
+    margin: auto;
+  }
+}
