@@ -184,11 +184,13 @@ module.exports = options => ({
     mainFields: ['browser', 'jsnext:main', 'main'],
     alias: {
       'dan-components': path.resolve(__dirname, '../../app/components/'),
+      'dan-containers': path.resolve(__dirname, '../../app/containers/'),
       'dan-actions': path.resolve(__dirname, '../../app/actions/'),
       'dan-styles': path.resolve(__dirname, '../../app/styles/components/'),
       'dan-api': path.resolve(__dirname, '../../app/api/'),
       'dan-images': path.resolve(__dirname, '../../public/images/'),
       'dan-vendor': path.resolve(__dirname, '../../node_modules/'),
+      'dan-utils': path.resolve(__dirname, '../../app/utils/'),
     }
   },
   devtool: options.devtool,

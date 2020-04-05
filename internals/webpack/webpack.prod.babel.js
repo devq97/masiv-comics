@@ -1,4 +1,4 @@
-// Important modules this config uses
+// Important components this config uses
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
