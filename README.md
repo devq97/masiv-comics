@@ -98,7 +98,7 @@ El proyecto permite manejar multiples idiomas, en este caso se hizo para poderlo
  
 * **David Vargas** - <devq97@gmail.com> 
 
-#### License 📄
+#### Licencia 📄
 
 Este proyecto está bajo la licencia del MIT.
 
