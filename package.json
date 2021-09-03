@@ -53,7 +53,7 @@
     "express": "^4.17.1",
     "history": "^4.10.1",
     "hoist-non-react-statics": "^3.3.2",
-    "immer": "^6.0.3",
+    "immer": "^9.0.6",
     "immutable": "^4.0.0-rc.12",
     "intl": "^1.2.5",
     "invariant": "^2.2.4",
