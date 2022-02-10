@@ -107,7 +107,7 @@
     "happypack": "^5.0.1",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.0.4",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "offline-plugin": "^5.0.7",
     "postcss-loader": "^3.0.0",
     "prettier": "^2.0.2",
