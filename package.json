@@ -59,7 +59,7 @@
     "invariant": "^2.2.4",
     "ip": "^1.1.5",
     "lodash": "^4.17.15",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "ngrok": "^3.2.7",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
